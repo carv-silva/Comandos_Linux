@@ -1,0 +1,14 @@
+programas necessarios ao linux
+
+
+##################--zsh--################
+
+1-sudo apt install zsh
+2- executar(zsh)
+3-colocar ele como default
+
+sudo gedit /etc/passwd
+achar a linha que tem seu usuario
+obs: caso nao sabia qual seu user usar comando :(users)
+
+vinicius:x:1000:1000:vinicius,,,:/home/vinicius:/bin/bash(trocar bash por zsh)

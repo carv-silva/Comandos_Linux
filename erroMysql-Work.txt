@@ -1,0 +1,15 @@
+apos terminar a instalacao do mysql(workbench) e dar problema de conexao(cannot connect to database server)
+
+executar os seguintes passos
+
+ set root user to mysql_native_password
+
+$ sudo mysql -u root -p # I had to use "sudo" since is new installation
+
+mysql:~ USE mysql;
+SELECT User, Host, plugin FROM mysql.user;
+UPDATE user SET plugin='mysql_native_password' WHERE User='root';
+FLUSH PRIVILEGES;
+exit;
+
+service mysql restart
